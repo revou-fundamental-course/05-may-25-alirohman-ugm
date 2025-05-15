@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agen Perjalanan Anda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <a href="#home" class="logo" data-key="logoText">Logo Anda</a>
+            <nav>
+                <ul>
+                    <li><a href="#home" data-key="navHome">Beranda</a></li>
+                    <li><a href="#our-package" data-key="navPackages">Paket Kami</a></li>
+                    <li><a href="#contact-form-section" data-key="navContact">Hubungi Kami</a></li>
+                </ul>
+            </nav>
+            <div class="header-controls">
+                <div class="language-switcher">
+                    <a href="#" data-lang="id" class="lang-option active-lang" aria-label="Pilih Bahasa Indonesia">ID</a>
+                    <span class="lang-separator">|</span>
+                    <a href="#" data-lang="en" class="lang-option" aria-label="Switch to English">EN</a>
+                </div>
+                <button class="nav-toggle" aria-label="toggle navigasi" data-aria-label-key="navToggle">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="home-section">
+            <div class="container">
+                <div class="home-intro">
+                    <h1 data-key="mainHeadline">Agen Perjalanan Terpercaya Anda</h1>
+                    <p class="subtitle" data-key="subHeadline">Kebahagiaan Anda adalah kebahagiaan kami</p>
+                </div>
+                <div class="home-content-grid">
+                    <div class="testimonial-slider-container">
+                        <div class="testimonial-slider">
+                            <div class="testimonial-slide active">
+                                <img src="img/liburan-keluarga-seru.jpg" 
+                                     alt="Gambar Testimoni 1: Liburan Keluarga" class="testimonial-main-image"
+                                     data-alt-key="testimonialImgAlt1" data-img-text-key="testimonialImgText1">
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text" data-key="testimonialText1">"Perjalanan yang luar biasa! Semuanya diatur dengan sempurna, dari akomodasi hingga itinerary. Anak-anak sangat senang. Terima kasih!"</p>
+                                    <div class="testimonial-profile">
+                                        <img src="img/AD.png" alt="Avatar Pelanggan 1" 
+                                             class="profile-avatar" data-alt-key="avatarAlt1" data-avatar-text-key="avatarText1">
+                                        <div class="profile-info">
+                                            <span class="profile-name" data-key="customerName1">Andi Dharmawan</span>
+                                            <span class="profile-details" data-key="customerDetails1">Wiraswasta, 38 tahun</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-slide">
+                                <img src="img/petualangan-tak-terlupakan.jpg" 
+                                     alt="Gambar Testimoni 2: Petualangan" class="testimonial-main-image"
+                                     data-alt-key="testimonialImgAlt2" data-img-text-key="testimonialImgText2">
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text" data-key="testimonialText2">"Pengalaman solo traveling pertama yang mengesankan. Destinasi yang direkomendasikan sangat cocok dengan minat saya. Pasti akan menggunakan jasa agen ini lagi!"</p>
+                                    <div class="testimonial-profile">
+                                        <img src="img/SR.png" alt="Avatar Pelanggan 2" 
+                                             class="profile-avatar" data-alt-key="avatarAlt2" data-avatar-text-key="avatarText2">
+                                        <div class="profile-info">
+                                            <span class="profile-name" data-key="customerName2">Siti Rahayu</span>
+                                            <span class="profile-details" data-key="customerDetails2">Desainer Grafis, 29 tahun</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-slide">
+                                <img src="img/bulan-madu-romantis.jpg" 
+                                     alt="Gambar Testimoni 3: Bulan Madu" class="testimonial-main-image"
+                                     data-alt-key="testimonialImgAlt3" data-img-text-key="testimonialImgText3">
+                                <div class="testimonial-content">
+                                    <p class="testimonial-text" data-key="testimonialText3">"Bulan madu kami menjadi sangat spesial berkat agen perjalanan ini. Semua detail kecil diperhatikan, membuat kami merasa sangat dimanjakan. Sangat direkomendasikan!"</p>
+                                    <div class="testimonial-profile">
+                                        <img src="img/RB.png" alt="Avatar Pelanggan 3" 
+                                             class="profile-avatar" data-alt-key="avatarAlt3" data-avatar-text-key="avatarText3">
+                                        <div class="profile-info">
+                                            <span class="profile-name" data-key="customerName3">Rizky & Bella</span>
+                                            <span class="profile-details" data-key="customerDetails3">Pasangan Baru Menikah, 27 & 25 tahun</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slider-dots">
+                            </div>
+                    </div>
+
+                    <div id="contact-form-section" class="contact-form-container home-form">
+                        <h3 data-key="contactUs">Hubungi Kami</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" data-key="formNameLabel">Nama Anda:</label>
+                                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap Anda" data-placeholder-key="formNamePlaceholder" required>
+                                <small class="error-message"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-key="formEmailLabel">Alamat Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" data-placeholder-key="formEmailPlaceholder" required>
+                                <small class="error-message"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="destination" data-key="formInterestLabel">Apa yang Anda minati?</label>
+                                <select id="destination" name="destination" required>
+                                    <option value="" data-key="formSelectOption">Pilih opsi</option>
+                                    <option value="Bali" data-key="formOptionBali">Bali</option>
+                                    <option value="Jepang" data-key="formOptionJapan">Jepang</option>
+                                    <option value="Singapura" data-key="formOptionSingapore">Singapura</option>
+                                    <option value="Bandung" data-key="formOptionBandung">Bandung</option>
+                                    <option value="Surabaya" data-key="formOptionSurabaya">Surabaya</option>
+                                    <option value="Paket Lain" data-key="formOptionOtherPackage">Paket Lain</option>
+                                    <option value="Pertanyaan Umum" data-key="formOptionGeneralInquiry">Pertanyaan Umum</option>
+                                </select>
+                                <small class="error-message"></small>
+                            </div>
+                            <button type="submit" class="btn btn-dark" data-key="formSubmitButton">KIRIM</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-package" class="our-package-section">
+            <div class="container">
+                <h2 data-key="ourPackagesTitle">Paket Kami</h2>
+                <div class="package-grid">
+                    <div class="package-item">
+                        <i class="fas fa-map-marker-alt package-icon"></i>
+                        <h4 data-key="baliPackageTitle">Bali</h4>
+                        <p data-key="baliPackageDesc">Temukan pesona Pulau Dewata, dari pantai yang memukau hingga sawah yang hijau subur.</p>
+                    </div>
+                    <div class="package-item">
+                        <i class="fas fa-map-marker-alt package-icon"></i>
+                        <h4 data-key="japanPackageTitle">Jepang</h4>
+                        <p data-key="japanPackageDesc">Rasakan perpaduan unik tradisi kuno dan inovasi futuristik di Negeri Sakura.</p>
+                    </div>
+                    <div class="package-item">
+                        <i class="fas fa-map-marker-alt package-icon"></i>
+                        <h4 data-key="singaporePackageTitle">Singapura</h4>
+                        <p data-key="singaporePackageDesc">Jelajahi negara kota yang semarak, tempat peleburan budaya dan keajaiban modern.</p>
+                    </div>
+                    <div class="package-item">
+                        <i class="fas fa-map-marker-alt package-icon"></i>
+                        <h4 data-key="bandungPackageTitle">Bandung</h4>
+                        <p data-key="bandungPackageDesc">Nikmati iklim sejuk, kelezatan kuliner, dan surga belanja di Paris van Java.</p>
+                    </div>
+                    <div class="package-item">
+                        <i class="fas fa-map-marker-alt package-icon"></i>
+                        <h4 data-key="surabayaPackageTitle">Surabaya</h4>
+                        <p data-key="surabayaPackageDesc">Selami kekayaan sejarah dan hiruk pikuk kehidupan kota metropolitan Jawa Timur.</p>
+                    </div>
+                    <div class="package-item">
+                        <i class="fas fa-map-marker-alt package-icon"></i>
+                        <h4 data-key="thirdFeatureTitle">Fitur Ketiga</h4>
+                        <p data-key="thirdFeatureDesc">Paket spesial yang dikurasi untuk menawarkan pengalaman unik dan tak terlupakan.</p>
+                    </div>
+                </div>
+                <div class="closing-argument">
+                    <h3 data-key="closingArgumentHeadline">Wujudkan Liburan Impian Anda, Tanpa Ribet!</h3>
+                    <p data-key="closingArgumentText">Percayakan perencanaan perjalanan Anda kepada kami. Dengan pengalaman dan jaringan luas, kami siap membantu Anda menciptakan kenangan indah di destinasi terbaik. Hubungi kami sekarang dan dapatkan penawaran eksklusif!</p>
+                    <a href="#contact-form-section" class="btn btn-dark-outline" data-key="ctaButton">PESAN SEKARANG</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4 data-key="footerLogoText">Logo Anda</h4>
+                    <p data-key="footerAboutText1">Mitra terpercaya Anda untuk pengalaman perjalanan yang tak terlupakan.</p>
+                    <p data-key="footerAboutText2">Kantor Pusat:<br>Jalan Wisata No. 123, Kota Pelancong, ID 75001</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-key="footerQuickLinks">Tautan Cepat</h4>
+                    <ul>
+                        <li><a href="#home" data-key="footerNavHome">Beranda</a></li>
+                        <li><a href="#our-package" data-key="footerNavPackages">Paket Kami</a></li>
+                        <li><a href="#contact-form-section" data-key="footerNavContact">Hubungi Kami</a></li>
+                        <li><a href="#" data-key="footerPrivacyPolicy">Kebijakan Privasi</a></li>
+                        <li><a href="#" data-key="footerTerms">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 data-key="footerFollowUs">Ikuti Kami</h4>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-key="footerCopyright">© <span id="currentYear"></span> Agen Perjalanan Anda. Hak Cipta Dilindungi. Desain oleh Moqups (Mockup)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
